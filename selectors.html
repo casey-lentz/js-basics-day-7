@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jquery Selectors</title>
+  <!-- link to jquery cdn -->
+  <script
+    src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+  </script>
+  <script>
+    // when dom is ready do things in this function
+    $(document).ready(function(){
+      $('#sh').click(function(){ // select by id with # which is same used by css id
+        $('.my-selector').hide(); // select by class . which is same used by css class
+      });
+      $('#ih').click(function(){
+        $('#my-id').hide();
+      });
+      $('#is').click(function(){
+        $('#my-id').show();
+      });
+      $('#ss').click(function(){
+        $('.my-selector').show();
+      });
+    });
+  </script>
+</head>
+<body>
+ <h1>Testing Selectors</h1>
+  <p class="my-selector">I'm my selectors class</p>
+  <p class="my-selector">I'm also my selectors class</p>
+  <p id="my-id">I'm a id</p>
+  <button id="sh">Selector Hide</button>
+  <button id="ss">Selector Show</button>
+  <button id="is">id Show</button>
+  <button id="ih">id hide</button>
+</body>
+</html>

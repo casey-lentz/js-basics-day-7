@@ -1,0 +1,3 @@
+jQuery - Javascript Library .. library eases development
+  - simplifies js development ... syntactical sugar for coders
+

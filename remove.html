@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jquery Selectors</title>
+  <!-- link to jquery cdn -->
+  <script
+    src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+  </script>
+  <script>
+    // when dom is ready do things in this function
+    $(document).ready(function(){
+      $('#remove-button').click(function(){
+        $('#my-id').remove();
+      });
+      $('#add-button').click(function(){
+        $('div').add('p').text('new text'); // user prepend instead of add
+      });
+    });
+  </script>
+</head>
+<body>
+ <h1>Testing Remove</h1>
+  <p id="my-id">
+    My P Tag Initial Text
+  </p>
+  <div>
+
+  </div>
+  <button id="remove-button">Remove</button>
+  <button id="add-button">Add</button>
+</body>
+</html>

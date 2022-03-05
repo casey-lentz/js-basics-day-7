@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jquery Selectors</title>
+  <!-- link to jquery cdn -->
+  <script
+    src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+  </script>
+  <style>
+    .color-red {
+      color: red;
+    }
+    .color-green {
+      color: green;
+    }
+
+  </style>
+  <script>
+    // when dom is ready do things in this function
+    $(document).ready(function(){
+      let ptag = $('p')
+     $('#css-button-red').click(function(){
+      ptag.removeAttr('class');
+      ptag.addClass('color-red');
+     });
+     $('#css-button-green').click(function(){
+      ptag.removeAttr('class');
+      ptag.addClass('color-green');
+     });
+    });
+  </script>
+</head>
+<body>
+ <h1>Add CSS</h1>
+  <p id="my-id">
+    My P Tag Initial Text
+  </p>
+  <p id="my-id2">
+    My P Tag Initial Text
+  </p>
+  <button id="css-button-red">Add Red</button>
+  <button id="css-button-green">Add green</button>
+
+</body>
+</html>

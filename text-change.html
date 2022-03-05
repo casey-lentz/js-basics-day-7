@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jquery Selectors</title>
+  <!-- link to jquery cdn -->
+  <script
+    src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+  </script>
+  <script>
+    // when dom is ready do things in this function
+    $(document).ready(function(){
+      $('#my-id').click(function(){
+        $(this).text('My New TEXT');
+        // yeah i'm doing this with text here .. replacing
+      });
+      $('#my-new-id').click(function(){
+        $(this).html('<b>My New Text</b>');
+        // replacing with new html
+      });
+    });
+  </script>
+</head>
+<body>
+ <h1>Testing Change</h1>
+  <p id="my-id">
+    My P Tag Initial Text
+  </p>
+  <p id="my-new-id">
+    My new ID text
+  </p>
+</body>
+</html>

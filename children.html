@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Children</title>
+  <script
+  src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+</script>
+<script>
+  $(document).ready(function(){
+    $('#button').click(function(){
+      console.log($('#parent').children());
+      $('#parent').children('p:last').hide();
+    });
+  });
+</script>
+</head>
+<body>
+  <div id="parent">
+      I'm the Parent
+      <p id="child1">
+        &nbsp; I'm the child 1 of this parent
+      </p>
+      <p id="child2">
+        &nbsp; I'm the child 2 of this parent
+      </p>
+  </div>
+  <button id="button">
+    Click Me
+  </button>
+</body>
+</html>
