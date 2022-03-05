@@ -1,3 +1,12 @@
 jQuery - Javascript Library .. library eases development
   - simplifies js development ... syntactical sugar for coders
 
+The power of jQuery is really getting data from the server.
+AJAX - Get data from server without refreshing the page.
+
+HTTP Methods (verbs)
+GET = fetch data that is not sensative. data goes as part of url.
+POST = insertion or creation (ie users). Post can hold sensative data.
+because data goes as part of message body and encrypted.
+PUT = Updating data.
+DELETE = Delete data. 

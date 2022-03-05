@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filter</title>
+  <script
+  src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+</script>
+<script>
+  $(document).ready(function(){
+    $('#button').click(function(){
+      $('div').not('.sib2').css('border', '4px solid green');
+    });
+  });
+</script>
+</head>
+<body>
+  <h1>Filters</h1>
+  <div id="sib1">
+    sibling 1
+  </div>
+  <div class="sib2">
+    sibling 2
+  </div>
+  <div class="sib2">
+    sibling 3
+  </div>
+  <button id="button">
+    Click Me
+  </button>
+</body>
+</html>
